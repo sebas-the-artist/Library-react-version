@@ -1,7 +1,7 @@
 import React from "react"
 import UndrawBooks from "../assets/Undraw_Books.svg"
 
-function name(params) {
+function Landing() {
     return (
         <section id="landing">
             <header>
@@ -22,3 +22,5 @@ function name(params) {
     )
     
 }
+
+export default Landing
