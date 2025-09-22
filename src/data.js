@@ -30,7 +30,7 @@ export const books = [
     url: "https://m.media-amazon.com/images/I/91nujEwIpYL._AC_UF1000,1000_QL80_.jpg",
     originalPrice: 44,
     salePrice: 19,
-    rating: 4.5,
+    rating: 5,
   },
   {
     id: 5,
@@ -38,7 +38,7 @@ export const books = [
     url: "https://m.media-amazon.com/images/I/71hjq42hvGL._AC_UF1000,1000_QL80_.jpg",
     originalPrice: 32,
     salePrice: null,
-    rating: 5,
+    rating: 4,
   },
   {
     id: 6,
@@ -46,7 +46,7 @@ export const books = [
     url: "https://m.media-amazon.com/images/I/616OvChM3RL._AC_UF1000,1000_QL80_.jpg",
     originalPrice: 70,
     salePrice: 12.5,
-    rating: 5,
+    rating: 3.5,
   },
   {
     id: 7,
@@ -70,7 +70,7 @@ export const books = [
     url: "https://m.media-amazon.com/images/I/611X8GI7hpL._AC_UF1000,1000_QL80_.jpg",
     originalPrice: 35,
     salePrice: 19.95,
-    rating: 4.5,
+    rating: 5,
   },
   {
     id: 10,

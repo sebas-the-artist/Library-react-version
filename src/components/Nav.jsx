@@ -32,8 +32,25 @@ const Nav = () => {
                 </ul>
                 <div className="menu__backdrop">
                     <button className="btn__menu btn__menu--close">
-                        <FontAwesomeIcon icon="times" />
+                    <FontAwesomeIcon icon="times" />
                     </button>
+                    <ul className="menu__links">
+                        <li className="menu__list">
+                            <a href="/" className="menulink">
+                                Home
+                            </a>
+                        </li>
+                        <li className="menu__list">
+                            <a href="/books" className="menulink">
+                                Books
+                            </a>
+                        </li>
+                        <li className="menu__list">
+                            <a href="/cart" className="menulink">
+                                Cart
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>

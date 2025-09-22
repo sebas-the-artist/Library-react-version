@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import Highlight from "./ui/Highlight"
 
 const Highlights = () => {
     return (
@@ -10,33 +11,21 @@ const Highlights = () => {
                         Why Choose <span className="purple">library</span>
                     </h2>
                     <div className="highlight__wrapper">
-                        <div className="highlight">
-                            <div className="highlight__img">
-                                <FontAwesomeIcon icon="bolt" />
-                            </div>
-                            <h3 className="highlight__subtitle"><span className="purple">Easy</span> & Quick</h3>
-                            <p className="highlight__para">
-                                Get access to the book you purchased online <span className="purple">instantly</span>
-                            </p>
-                        </div>
-                        <div className="highlight">
-                            <div className="highlight__img">
-                                <FontAwesomeIcon icon="book-open" />
-                            </div>
-                            <h3 className="highlight__subtitle"><span className="purple">10,000+</span> books</h3>
-                            <p className="highlight__para">
-                                Library has books in <span className="purple">all</span> your <span className="purple">favorite</span> categories
-                            </p>
-                        </div>
-                        <div className="highlight">
-                            <div className="highlight__img">
-                                <FontAwesomeIcon icon="tags" />
-                            </div>
-                            <h3 className="highlight__subtitle">Affordable</h3>
-                            <p className="highlight__para">
-                                Get books for as little as <span className="purple">$10</span>
-                            </p>
-                        </div>
+                        <Highlight 
+                        icon={<FontAwesomeIcon icon="bolt" />}
+                        title="Easy & Quick"
+                        para="Get access to the book you purchased online instantly"
+                         />
+                        <Highlight 
+                        icon={<FontAwesomeIcon icon="book-open" />}
+                        title="10,000+ Books"
+                        para="Library has books in all your favorite categories"
+                         />
+                        <Highlight 
+                        icon={<FontAwesomeIcon icon="tags" />}
+                        title="Affordable"
+                        para="Get books for as little as $10"
+                         />
                     </div>
                 </div>
             </div>

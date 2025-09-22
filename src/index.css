@@ -335,8 +335,7 @@ HIGHLIGHTS
 
 .highlight__img {
   border: 2px solid #7342d65d;
-  border: 5px groove #7342d65d;
-  border-radius: 50%;
+  border: 4px solid #7342d65d;
   color: #7342d6;
   width: 100px;
   height: 100px;
@@ -348,10 +347,11 @@ HIGHLIGHTS
   font-size: 32px;
   margin-bottom: 24px;
 
-  transition: all 400ms ease;
+  transition: all 300ms ease;
 }
 .highlight__img:hover {
-  border: 8px groove #7342d6;
+  border: 8px solid #7342d6;
+  /*cursor: grab;*/
 }
 
 .highlight__subtitle {
