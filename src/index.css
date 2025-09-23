@@ -82,6 +82,10 @@ button:active {
   font-size: 20px;
   border-radius: 4px;
   border: none;
+  animation: float 1000ms alternate-reverse infinite ease-in-out;
+}
+.btn:hover {
+  opacity: 90%;
 }
 
 .purple {
@@ -91,6 +95,35 @@ button:active {
 .logo {
   width: 160px;
 }
+
+/*
+
+ANIME MAMMARIES
+
+*/
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  0% {
+    transform: translateY(-2px);
+  }
+}
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  0% {
+    transform: scale(1.05);
+  }
+}
+
+/*
+
+NAV IMMIGRATION
+
+*/
 
 .nav__container {
   width: 100%;
