@@ -12,7 +12,7 @@ const Footer = () => {
             </figure>
           </a>
           <div className="footer__list">
-            <a href="/" className="footer__link footer__link--1">
+            <a href="#" className="footer__link footer__link--1">
               Home
             </a>
             <span className="footer__link no-cursor footer__link--2">

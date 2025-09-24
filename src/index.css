@@ -6,6 +6,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -277,6 +281,21 @@ NAV IMMIGRATION
 .menu__link {
   color: white;
   font-size: 40px;
+  transition: all 200ms ease;
+}
+.menu__link:hover {
+  opacity: 99%;
+  text-decoration: none;
+  border-radius: 100px;
+  padding: 6%;
+  color: whitesmoke;
+  background-color: #7342d6;
+  /*animation: shake 500ms ease reverse infinite;*/
+  box-shadow: 0 0 20px 8px #7342d6, 0 0 32px 16px whitesmoke;
+  box-shadow: 0 0 16px 8px #7342d6, 0 0 28px 12px whitesmoke;
+  box-shadow: 0 0 8px 2px #242424, 0 0 40px 2px #7342d6;
+
+  transform: scale(0.4);
 }
 
 .btn__menu--close {
@@ -285,6 +304,24 @@ NAV IMMIGRATION
   right: 20px;
   padding: 8px;
   color: white;
+
+  border-radius: 50%;
+  transition: all 200ms ease;
+}
+.btn__menu--close:hover {
+  transform: scale(1.2);
+  color: #7342d6;
+  /*
+  opacity: 99%;
+  text-decoration: none;
+  border-radius: 100px;
+  color: whitesmoke;
+  background-color: #7342d6;
+  background-color: gold;
+  box-shadow: 0 0 20px 8px #7342d6, 0 0 32px 16px whitesmoke;
+  box-shadow: 0 0 16px 8px #7342d6, 0 0 28px 12px whitesmoke;
+  box-shadow: 0 0 8px 2px #242424, 0 0 40px 2px gold;
+  */
 }
 
 /* 
@@ -462,6 +499,7 @@ FEATURES
 .book__img {
   max-height: 320px;
   max-width: 240px;
+  max-width: 230px;
   transition: all 300ms ease;
 
   /*
@@ -702,6 +740,9 @@ select {
   book/:id
     
 */
+.books__container {
+  background-color: rgba(115, 66, 214, 0.1);
+}
 
 .container__book--selected {
   padding-top: 16px;
@@ -977,5 +1018,17 @@ select {
   .footer__link {
     font-size: 16px;
     padding: 0 8px;
+  }
+}
+@media (max-width: 500px) {
+  .book {
+    /*
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    */
+  }
+  .book__img {
   }
 }
