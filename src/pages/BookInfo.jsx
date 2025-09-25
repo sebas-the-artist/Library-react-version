@@ -1,4 +1,45 @@
 import React from "react";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Rating from "../components/ui/Rating";
+
+const BookInfo = () => {
+  return (
+    <div id="books__body">
+      <main id="books__main">
+        <div className="books__container">
+          <div className="row">
+            <div className="book__selected--top">
+              <Link to="/books" className="book__link">
+                <FontAwesomeIcon icon="arrow-left" />
+              </Link>
+              <Link to="/books" className="book__selected--title--top">
+                <h2 className="book__selected--title--top">Books</h2>
+              </Link>
+            </div>
+            <div className="book__selected">
+              <figure className="book__selected--figure">
+                <img
+                  src="https://m.media-amazon.com/images/I/81gTRv2HXrL._AC_UF1000,1000_QL80_.jpg"
+                  className="book__selected--img"
+                />
+              </figure>
+              <div className="book__selected--description">
+                <h2 className="book__selected--title"> suck ya muddah</h2>
+                <Rating rating="4.5" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  );
+};
+
+export default BookInfo;
+
+/*
+import React from "react";
 import { useParams } from "react-router";
 import Ratings from "../components/ui/Ratings";
 import Price from "../components/ui/Price";
@@ -74,3 +115,4 @@ const BookInfo = ({ books, addItemToCart }) => {
 };
 
 export default BookInfo;
+*/
