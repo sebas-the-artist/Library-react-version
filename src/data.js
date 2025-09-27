@@ -6,7 +6,8 @@ export const books = [
     url: "https://m.media-amazon.com/images/I/61mIq2iJUXL._AC_UF1000,1000_QL80_.jpg",
     originalPrice: 49.95,
     salePrice: 14.95,
-    rating: 4.5,
+    rating: 4,
+    summary: "add something here with ai, click this book to see its already able / set up to show(book info) all you have to do is add a summary"
   },
   {
     id: 2,
@@ -22,7 +23,7 @@ export const books = [
     url: "https://m.media-amazon.com/images/I/81gTRv2HXrL._AC_UF1000,1000_QL80_.jpg",
     originalPrice: 29,
     salePrice: null,
-    rating: 5,
+    rating: 4.5,
   },
   {
     id: 4,
@@ -62,7 +63,7 @@ export const books = [
     url: "https://m.media-amazon.com/images/I/71+SWQ6xj1L._AC_UF1000,1000_QL80_.jpg",
     originalPrice: 38,
     salePrice: 17.95,
-    rating: 4.5,
+    rating: 4,
   },
   {
     id: 9,
@@ -78,7 +79,7 @@ export const books = [
     url: "https://m.media-amazon.com/images/I/91wOERyhh7L._UF1000,1000_QL80_.jpg",
     originalPrice: 40,
     salePrice: null,
-    rating: 5,
+    rating: 4,
   },
   {
     id: 11,
