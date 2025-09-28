@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom/cjs/react-router-dom.min";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Rating from "../components/ui/Rating";
 import Price from "../components/ui/Price";
+import Book from "../components/ui/Book";
 
 const BookInfo = ({ books }) => {
   const { id } = useParams();
@@ -55,6 +56,14 @@ const BookInfo = ({ books }) => {
           <div className="row">
             <div className="book__selected--top">
               <h2 className="book__selected--title--top">Recommended Books</h2>
+            </div>
+            <div className="recommended__books--wrapper">
+              {books
+                .filter((book) => book.rating && +book.id !== +id)
+                .slice(0, 4)
+                .map((book) => (
+                  <Book book={book} key={book.id} />
+                ))}
             </div>
           </div>
         </div>
