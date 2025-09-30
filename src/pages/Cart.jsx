@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import EmptyCart from "../assets/undraw_book-lover_m9n3.svg";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 const Cart = ({ cart, changeQuantity, removeItem }) => {
   const total = () => {
@@ -71,30 +73,43 @@ const Cart = ({ cart, changeQuantity, removeItem }) => {
                   );
                 })}
               </div>
+              {cart.length === 0 && (
+                <div className="cart__empty">
+                  <img src={EmptyCart} alt="" className="cart__empty--img" />
+                  <h2>
+                    There's No Books...<span className="purple">Why</span>
+                  </h2>
+                  <Link to="/books">
+                    <button className="btn">Browse Books</button>
+                  </Link>
+                </div>
+              )}
             </div>
-            <div className="total">
-              <div className="total__item total__sub-total">
-                <span>Subtotal</span>
-                {/*<span>${(total() * 0.93).toFixed(2)}</span>*/}
-                <span>${total().toFixed(2)}</span>
+            {cart.length > 0 && (
+              <div className="total">
+                <div className="total__item total__sub-total">
+                  <span>Subtotal</span>
+                  {/*<span>${(total() * 0.93).toFixed(2)}</span>*/}
+                  <span>${total().toFixed(2)}</span>
+                </div>
+                <div className="total__item total__tax">
+                  <span>Tax</span>
+                  {/*<span>${(total() * 0.07).toFixed(2)}</span>*/}
+                  <span>${(total() * 0.07).toFixed(2)}</span>
+                </div>
+                <div className="total__item total__price">
+                  <span>Total</span>
+                  {/* <span>${total()}</span> */}
+                  <span>${(total() * 1.07).toFixed(2)}</span>
+                </div>
+                <button
+                  className="btn__checkout no-cursor"
+                  onClick={() => alert(`Does your mom know you're gay? o3o`)}
+                >
+                  Proceed To Checkout
+                </button>
               </div>
-              <div className="total__item total__tax">
-                <span>Tax</span>
-                {/*<span>${(total() * 0.07).toFixed(2)}</span>*/}
-                <span>${(total() * 0.07).toFixed(2)}</span>
-              </div>
-              <div className="total__item total__price">
-                <span>Total</span>
-                {/* <span>${total()}</span> */}
-                <span>${(total() * 1.07).toFixed(2)}</span>
-              </div>
-              <button
-                className="btn__checkout no-cursor"
-                onClick={() => alert(`Does your mom know you're gay? o3o`)}
-              >
-                Proceed To Checkout
-              </button>
-            </div>
+            )}
           </div>
         </div>
       </main>
