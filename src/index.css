@@ -913,6 +913,12 @@ select:hover {
 .cart__input {
   padding: 8px;
   width: 60px;
+  outline: 1px solid #7342d6;
+  outline: 1px solid black;
+}
+.cart__input:active {
+  outline: 1px solid gold;
+  outline: 1px solid #7342d6;
 }
 
 .cart__book--img {
