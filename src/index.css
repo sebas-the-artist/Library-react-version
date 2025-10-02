@@ -1110,12 +1110,10 @@ select:hover {
 }
 @media (max-width: 470px) {
   .book {
-    /*
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    */
   }
   .book__img {
     height: 180px;
