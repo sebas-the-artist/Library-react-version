@@ -8,7 +8,7 @@ function Landing() {
       <header>
         <div className="header__container">
           <div className="header__description">
-            <h1>Florida's most awarded library platform</h1>
+            <h1>Florida's Most Awarded Library Platform</h1>
             <h2>
               Find your dream book with <span className="purple">Library</span>
             </h2>
