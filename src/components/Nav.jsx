@@ -33,7 +33,7 @@ const Nav = ({ numberOfItems }) => {
             <FontAwesomeIcon icon="bars" />
           </button>
           <li className="nav__icon">
-            <Link to="/cart" className="nav__link">
+            <Link to="/cart" className="nav__link nav__cart">
               <FontAwesomeIcon icon="shopping-cart" />
             </Link>
             {numberOfItems > 0 && (

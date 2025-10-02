@@ -141,10 +141,15 @@ ANIME MAMMARIES
   40%,
   100% {
     transform: translateY(0);
+    text-shadow: 0 0 20px rgb(176, 136, 255);
   }
   20% {
     transform: translateY(-10px) scale(1.3) rotate(0deg);
     color: rgb(203, 177, 255);
+    color: rgb(176, 136, 255);
+    color: #7342d6;
+    text-shadow: 0 0 10px #606266;
+    text-shadow: 0 0 10px #242424;
   }
   45% {
     color: #bbbbbb;
@@ -222,6 +227,12 @@ NAV IMMIGRATION
   font-size: 20px;
   position: relative;
   margin-left: 8px;
+}
+.nav__cart {
+  transition: all 300ms ease;
+}
+.nav__cart:hover {
+  color: #242424;
 }
 
 .cart__length {
@@ -522,7 +533,7 @@ FEATURES
 
 .book__img--skeleton {
   width: 100%;
-  max-width: 250px;
+  max-width: 230px;
   height: 320px;
   background-color: rgb(204, 204, 204);
   margin-bottom: 8px;
@@ -576,7 +587,7 @@ FEATURES
 .book__ratings:hover {
 }
 .star {
-  transition: all 300ms ease;
+  transition: all 400ms ease-in;
 }
 .star:hover {
   transform: rotate(360deg);
@@ -640,6 +651,7 @@ footer {
   padding: 0 32px;
   display: inline-block;
   color: rgb(203, 177, 255);
+  color: rgb(176, 136, 255);
   color: whitesmoke;
   animation: wave 6s ease-in-out infinite;
   font-size: 20px;
@@ -741,8 +753,6 @@ select:hover {
   color: #7342d6;
   border: 3px solid #7342d6;
   border: 3px solid #606060;
-  background-color: whitesmoke;
-  background-color: #dcdfe6;
 }
 
 .books__loading {
