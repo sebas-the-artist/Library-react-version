@@ -1139,4 +1139,11 @@ select:hover {
     height: 0;
     font-size: 0;
   }
+  .books__header--title {
+    font-size: 16px;
+  }
+  #filter {
+    width: 60%;
+    font-size: 12px;
+  }
 }
