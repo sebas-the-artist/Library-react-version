@@ -1,3 +1,38 @@
+this is my first project using react. i learned alot, almost too much, react is so similar yet unique to html, css, and js i really enjoyed the challenge ill definitely be using this more to get the hang of things but im feeling pretty good so far
+
+LANGUAGES USED : React, HTML, CSS, JAVAscript
+
++++++ areas in need of improvement (with my self and the website)
+
+-when i go to a new page, i used links for the first time instead of "a href". it doesnt refresh which is cool but, the new page will load half way down, ill have to fix that before post but i feel as if i should keep track of how i do it, might be a reoccurring problem if i dont "nip it in the butt"-rick
+
+-i shouldve used an api to have the books rather than just manually implementing the covers, and info
+
+- media queery my sizing of the books is so wonky but it gets the job done, nothings pushing or merging
+- 
+- like i said i implemented the info manually and im gonna add some ai description of each book, ive read a few of these i might write those by hand to make it that much more personal
+- 
+- it might be too purple, if theres such a thing. i always ask my girlfriend her opinion if im unsure
+- 
+- the footer links might bee too much with the glow effect, and the color being so dark, i still have the original colors commented out if i wanna change it
+
++++++++ things i learned in this project 
+
+-REACT i was watching videos for about a week but thats like learning how to whistle from a book you know . i actually think that react will be easier than the 3 individually, itll take some time but im maleable and exited to learn so ill be more than fine
+
+-the wave animation on the footer links, took me an hour+ to geth the timing right and the color fade and the glow. cool though
+
+-adding the image when the cart is empty(in the cart section)
+
+-making the button change from "add to cart" to "go to checkout" once the book was added, thought that was a nice touch for UI experience
+
+-i put a couple cool animations on things that ive never tried before
+
+-theres a little icon that pops up when you have an item in your cart ( NAV )
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
