@@ -236,7 +236,10 @@ NAV IMMIGRATION
 }
 
 .cart__length {
+  background-color: rgb(176, 136, 255);
+  background-color: burlywood;
   background-color: red;
+  color: black;
   color: white;
   width: 18px;
   height: 18px;
@@ -1104,5 +1107,24 @@ select:hover {
     */
   }
   .book__img {
+  }
+}
+@media (max-width: 470px) {
+  .book {
+    /*
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    */
+  }
+  .book__img {
+    height: 180px;
+    height: 70%;
+    width: 150px;
+    width: 70%;
+  }
+  .book__title--link {
+    font-size: 16px;
   }
 }
