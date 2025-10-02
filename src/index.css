@@ -1118,6 +1118,7 @@ select:hover {
     */
     margin-left: 5%;
     width: 45%;
+    padding: 12px;
   }
   .book__img {
     height: 180px;
@@ -1145,5 +1146,10 @@ select:hover {
   #filter {
     width: 60%;
     font-size: 12px;
+  }
+  .skeleton {
+  }
+  .book__img--skeleton {
+    height: 150px;
   }
 }
