@@ -1126,6 +1126,9 @@ select:hover {
     width: 150px;
     width: 80%;
   }
+  .book:hover .book__img--wrapper {
+    transform: scale(1.15) translateY(-2%);
+  }
   .book__title--link {
     font-size: 16px;
   }
@@ -1151,5 +1154,10 @@ select:hover {
   }
   .book__img--skeleton {
     height: 150px;
+  }
+  .cart__header {
+    width: 100vw;
+    margin: 0;
+    margin-left: -24px;
   }
 }
