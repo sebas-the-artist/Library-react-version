@@ -1160,4 +1160,14 @@ select:hover {
     margin: 0;
     margin-left: -24px;
   }
+  .cart__body {
+    width: 100vw;
+    margin-left: -24px;
+  }
+  .total {
+    width: 70%;
+  }
+  .total__item {
+    font-size: 16px;
+  }
 }
