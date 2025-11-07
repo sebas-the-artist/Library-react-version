@@ -26,7 +26,7 @@ LANGUAGES USED : React, HTML, CSS, JAVAscript
 
 -making the button change from "add to cart" to "go to checkout" once the book was added, thought that was a nice touch for UI experience
 
--i put a couple cool animations on things that ive never tried before
+-i put a couple cool animations on things that ive never tried before or really even seen before
 
 -theres a little icon that pops up when you have an item in your cart ( NAV )
 
